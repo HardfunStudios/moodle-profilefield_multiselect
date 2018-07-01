@@ -9,7 +9,7 @@ class profile_field_multiselect extends profile_field_base {
      * Pulls out the options for the menu from the database and sets the
      * the corresponding key for the data if it exists
      */
-    function profile_field_multiselect($fieldid=0, $userid=0) {
+    function __constructor($fieldid=0, $userid=0) {
         //first call parent constructor
         $this->profile_field_base($fieldid, $userid);
 
